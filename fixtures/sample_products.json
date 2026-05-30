@@ -1,0 +1,44 @@
+[
+  {
+    "model": "store.category",
+    "pk": 1,
+    "fields": {
+      "name": "Electronics",
+      "slug": "electronics"
+    }
+  },
+  {
+    "model": "store.category",
+    "pk": 2,
+    "fields": {
+      "name": "Books",
+      "slug": "books"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 1,
+    "fields": {
+      "category": 1,
+      "name": "Laptop",
+      "slug": "laptop",
+      "description": "Gaming Laptop",
+      "price": "65000.00",
+      "stock": 15,
+      "available": true
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 2,
+    "fields": {
+      "category": 2,
+      "name": "Python Book",
+      "slug": "python-book",
+      "description": "Learn Python",
+      "price": "499.00",
+      "stock": 50,
+      "available": true
+    }
+  }
+]
