@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>My Orders</h1>
+
+{% for order in orders %}
+
+<div>
+
+    <h3>
+        Order #{{ order.id }}
+    </h3>
+
+    <p>
+        Status:
+        {{ order.status }}
+    </p>
+
+    <a href="{% url 'order_detail' order.id %}">
+        View Details
+    </a>
+
+</div>
+
+<hr>
+
+{% empty %}
+
+<p>
+No orders found.
+</p>
+
+{% endfor %}
+
+{% endblock %}
